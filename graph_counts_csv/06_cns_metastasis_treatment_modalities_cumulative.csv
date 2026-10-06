@@ -1,0 +1,105 @@
+Category,Year,Publications,Cumulative publications
+Antibody/ADC therapy,2000,0,0
+Antibody/ADC therapy,2001,2,2
+Antibody/ADC therapy,2002,3,5
+Antibody/ADC therapy,2003,4,9
+Antibody/ADC therapy,2004,3,12
+Antibody/ADC therapy,2005,5,17
+Antibody/ADC therapy,2006,11,28
+Antibody/ADC therapy,2007,22,50
+Antibody/ADC therapy,2008,40,90
+Antibody/ADC therapy,2009,30,120
+Antibody/ADC therapy,2010,23,143
+Antibody/ADC therapy,2011,29,172
+Antibody/ADC therapy,2012,49,221
+Antibody/ADC therapy,2013,52,273
+Antibody/ADC therapy,2014,53,326
+Antibody/ADC therapy,2015,57,383
+Antibody/ADC therapy,2016,74,457
+Antibody/ADC therapy,2017,58,515
+Antibody/ADC therapy,2018,71,586
+Antibody/ADC therapy,2019,71,657
+Antibody/ADC therapy,2020,91,748
+Antibody/ADC therapy,2021,110,858
+Antibody/ADC therapy,2022,128,986
+Antibody/ADC therapy,2023,144,1130
+Antibody/ADC therapy,2024,140,1270
+Antibody/ADC therapy,2025,192,1462
+Chemotherapy,2000,47,47
+Chemotherapy,2001,70,117
+Chemotherapy,2002,79,196
+Chemotherapy,2003,84,280
+Chemotherapy,2004,102,382
+Chemotherapy,2005,130,512
+Chemotherapy,2006,117,629
+Chemotherapy,2007,134,763
+Chemotherapy,2008,162,925
+Chemotherapy,2009,175,1100
+Chemotherapy,2010,151,1251
+Chemotherapy,2011,179,1430
+Chemotherapy,2012,233,1663
+Chemotherapy,2013,240,1903
+Chemotherapy,2014,250,2153
+Chemotherapy,2015,277,2430
+Chemotherapy,2016,321,2751
+Chemotherapy,2017,303,3054
+Chemotherapy,2018,353,3407
+Chemotherapy,2019,382,3789
+Chemotherapy,2020,392,4181
+Chemotherapy,2021,427,4608
+Chemotherapy,2022,403,5011
+Chemotherapy,2023,423,5434
+Chemotherapy,2024,436,5870
+Chemotherapy,2025,512,6382
+Immunotherapy,2000,2,2
+Immunotherapy,2001,2,4
+Immunotherapy,2002,5,9
+Immunotherapy,2003,3,12
+Immunotherapy,2004,5,17
+Immunotherapy,2005,5,22
+Immunotherapy,2006,3,25
+Immunotherapy,2007,9,34
+Immunotherapy,2008,9,43
+Immunotherapy,2009,11,54
+Immunotherapy,2010,11,65
+Immunotherapy,2011,9,74
+Immunotherapy,2012,25,99
+Immunotherapy,2013,31,130
+Immunotherapy,2014,19,149
+Immunotherapy,2015,52,201
+Immunotherapy,2016,67,268
+Immunotherapy,2017,106,374
+Immunotherapy,2018,167,541
+Immunotherapy,2019,175,716
+Immunotherapy,2020,274,990
+Immunotherapy,2021,347,1337
+Immunotherapy,2022,292,1629
+Immunotherapy,2023,329,1958
+Immunotherapy,2024,348,2306
+Immunotherapy,2025,422,2728
+Targeted/small-molecule therapy,2000,0,0
+Targeted/small-molecule therapy,2001,1,1
+Targeted/small-molecule therapy,2002,0,1
+Targeted/small-molecule therapy,2003,7,8
+Targeted/small-molecule therapy,2004,11,19
+Targeted/small-molecule therapy,2005,12,31
+Targeted/small-molecule therapy,2006,23,54
+Targeted/small-molecule therapy,2007,33,87
+Targeted/small-molecule therapy,2008,28,115
+Targeted/small-molecule therapy,2009,41,156
+Targeted/small-molecule therapy,2010,31,187
+Targeted/small-molecule therapy,2011,47,234
+Targeted/small-molecule therapy,2012,108,342
+Targeted/small-molecule therapy,2013,147,489
+Targeted/small-molecule therapy,2014,134,623
+Targeted/small-molecule therapy,2015,195,818
+Targeted/small-molecule therapy,2016,231,1049
+Targeted/small-molecule therapy,2017,227,1276
+Targeted/small-molecule therapy,2018,255,1531
+Targeted/small-molecule therapy,2019,288,1819
+Targeted/small-molecule therapy,2020,341,2160
+Targeted/small-molecule therapy,2021,406,2566
+Targeted/small-molecule therapy,2022,396,2962
+Targeted/small-molecule therapy,2023,417,3379
+Targeted/small-molecule therapy,2024,395,3774
+Targeted/small-molecule therapy,2025,475,4249

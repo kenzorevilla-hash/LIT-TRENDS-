@@ -1,0 +1,59 @@
+METHODS
+
+- Study design: A descriptive bibliometric analysis was performed to characterize PubMed-indexed neuroscience and neuro-oncology publications from 2000 through 2025.
+
+- Data source: Publication records and counts were obtained from PubMed through the National Center for Biotechnology Information Entrez E-utilities using Biopython.
+
+- Date definition: Records were assigned to calendar years using the PubMed publication-date field (`[pdat]`). Annual count searches used the form `(complete query) AND (year[pdat])` for each year from 2000 to 2025.
+
+- General neuroscience search: The general-neuroscience query combined a broad set of neurologic, neurosurgical, neurodegenerative, neuroimmunologic, cerebrovascular, epileptic, neuromuscular, infectious, traumatic, congenital, and related nervous-system disease terms.
+
+- Neuro-oncology search: The neuro-oncology query combined the Nervous System Neoplasms Medical Subject Heading with named primary and metastatic central nervous system tumor terms, including gliomas, glioblastoma, meningioma, medulloblastoma, ependymoma, primary CNS lymphoma, brain metastasis, and leptomeningeal disease terms.
+
+- Publication comparison: Annual general-neuroscience and neuro-oncology counts were tabulated separately. The annual neuro-oncology proportion was calculated as the neuro-oncology count divided by the general-neuroscience count and was reported as a percentage.
+
+- Treatment-modality searches: Neuro-oncology records were classified with four independent therapy queries: chemotherapy; targeted/small-molecule therapy; antibody/antibody-drug conjugate therapy; and immunotherapy. Each query included class terms, commonly used synonyms, and named agents defined in the notebook.
+
+- Disease contexts: Treatment-modality searches were performed in three contexts: aggregated neuro-oncology, primary CNS malignancy, and CNS metastasis. The primary-CNS context used nonmetastatic intracranial and CNS tumor terms. The broad CNS-metastasis context included brain metastasis, brain metastases, leptomeningeal disease, and leptomeningeal carcinomatosis.
+
+- Treatment-publication exclusion: All treatment-modality searches, including the Phase III analyses, excluded records containing the exact phrase `"Prophylactic Cranial Irradiation"` in the title or abstract.
+
+- Cumulative treatment trends: Annual treatment-modality counts were ordered by publication year and cumulatively summed within each treatment category. A publication could contribute to more than one treatment category when it satisfied more than one modality query.
+
+- Phase III definition: Phase III records were required to match at least one of the following: `"Clinical Trial, Phase III"[Publication Type]`, `"phase III"[Title/Abstract]`, or `"phase 3"[Title/Abstract]`.
+
+- Phase III article-type restriction: Phase III records were additionally required to be indexed as `Clinical Trial` or `Clinical Trial, Phase III`. Records indexed as Review, Systematic Review, or Meta-Analysis were excluded.
+
+- Phase III contexts: The same Phase III and article-type restrictions were applied to the aggregated neuro-oncology, primary-CNS malignancy, and CNS-metastasis analyses.
+
+- Restricted Phase III CNS-metastasis logic: The CNS-metastasis Phase III query required (`"neurologic progression"` OR `"Neurocognitive progression"` OR `"survival"`) in the title or abstract AND (`"Brain Metastasis"` OR `"CNS Metastasis"`) in the title or abstract.
+
+- Cumulative Phase III trends: Annual Phase III publication counts were cumulatively summed within each treatment category before plotting.
+
+- Molecular-target searches: Molecular targets were searched in PubMed titles and abstracts using each target symbol together with established aliases. Targets were organized into biologically related families and evaluated separately in aggregated neuro-oncology, primary-CNS, and CNS-metastasis contexts.
+
+- Biologic and antibody-drug conjugate searches: Biologic targets were searched by supplied symbols, names, and aliases using the same context-specific and publication-type framework. Targets already represented in the small-molecule or immune-checkpoint analyses were excluded from the biologic-target set.
+
+- Immune and cell-therapy searches: Immune targets and agents were searched using supplied names and aliases together with family-specific concepts for checkpoint inhibition/immunotherapy, vaccination, chimeric antigen receptor therapy, or oncolytic virotherapy.
+
+- Primary-literature filter for target analyses: Target-level searches included records indexed as Clinical Study; Clinical Trial, including Phases I-IV and listed protocol, controlled, randomized, adaptive, pragmatic, and equivalence trial types; Multicenter Study; or Journal Article. Reviews, Systematic Reviews, and Meta-Analyses were excluded.
+
+- Target-level year assignment: Target queries searched the full `2000:2025[pdat]` interval. PubMed summaries were retrieved in batches, and the publication year was parsed from each record's PubDate field to generate annual counts.
+
+- Target-series inclusion: Target or agent series with zero publications across the full 2000-2025 interval were omitted from the corresponding context-specific figure. A publication could contribute to multiple target curves if multiple target terms appeared in its title or abstract.
+
+- Cumulative target trends: Annual molecular-target, biologic-target, and immune/cell-therapy counts were cumulatively summed within each target before visualization.
+
+- Query caching: Results were stored in `.pubmed_cache/pubmed_counts.sqlite3`. Annual query-year counts and target-range results were maintained in separate cache tables.
+
+- Cache keys: Complete PubMed queries were normalized for inconsequential whitespace differences and hashed with SHA-256. Only missing query-year results were requested unless a forced refresh was specified.
+
+- Request handling: Entrez requests used retry logic with exponential backoff. Successful requests were rate-limited to comply with the unauthenticated NCBI request limit, and failed requests were not written to the cache.
+
+- Data processing: Retrieved counts were organized with pandas. Cumulative totals were calculated with category- or target-specific cumulative sums in ascending publication-year order.
+
+- Visualization: Figures were generated with seaborn and Matplotlib. Treatment categories used consistent colors and point markers across contexts, publication years were displayed on the x-axis, and integer tick locators were used for publication counts. Percentage plots used percentage-formatted axes.
+
+- Reporting: Results represent PubMed records satisfying the programmed Boolean searches and should be interpreted as publication counts rather than counts of unique clinical trials. Overlapping queries can cause a record to appear in multiple categories or target series.
+
+- Analysis scope: The notebook presents descriptive publication trends and does not perform inferential statistical testing, effect-size estimation, or assessment of study quality or clinical outcomes.

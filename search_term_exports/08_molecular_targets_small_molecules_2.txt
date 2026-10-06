@@ -1,0 +1,241 @@
+8. Molecular Targets for Small Molecules
+========================================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+This category was listed twice in the request; this separately numbered export intentionally repeats item 7.
+MOLECULAR_TARGET_FAMILIES
+-------------------------
+Notebook cell: 40
+
+MOLECULAR_TARGET_FAMILIES = {
+    "ErbB / EGFR family": {
+        "EGFR": ["EGFR", "ERBB1", "epidermal growth factor receptor"],
+        "HER2": ["HER2", "ERBB2", "human epidermal growth factor receptor 2"],
+        "HER4": ["HER4", "ERBB4", "human epidermal growth factor receptor 4"],
+    },
+    "VEGFR family": {
+        "VEGFR1": ["VEGFR1", "VEGFR-1", "FLT1", "vascular endothelial growth factor receptor 1"],
+        "VEGFR2": ["VEGFR2", "VEGFR-2", "KDR", "vascular endothelial growth factor receptor 2"],
+        "VEGFR3": ["VEGFR3", "VEGFR-3", "FLT4", "vascular endothelial growth factor receptor 3"],
+    },
+    "PDGFR / KIT / ABL": {
+        "PDGFRα": ["PDGFRA", "PDGFR alpha", "PDGFR-alpha", "PDGFRα", "platelet-derived growth factor receptor alpha"],
+        "PDGFRβ": ["PDGFRB", "PDGFR beta", "PDGFR-beta", "PDGFRβ", "platelet-derived growth factor receptor beta"],
+        "KIT": ["c-KIT", "CD117", "KIT receptor", "KIT proto-oncogene"],
+        "ABL1": ["ABL1", "c-ABL", "ABL proto-oncogene 1"],
+        "BCR-ABL": ["BCR-ABL", "BCR-ABL1", "BCR::ABL1"],
+    },
+    "RAF / MAPK pathway": {
+        "BRAF": ["BRAF", "B-RAF"],
+        "CRAF": ["CRAF", "C-RAF", "RAF1"],
+        "ARAF": ["ARAF", "A-RAF"],
+        "MEK1": ["MEK1", "MAP2K1"],
+        "MEK2": ["MEK2", "MAP2K2"],
+    },
+    "IDH": {
+        "IDH1": ["IDH1", "isocitrate dehydrogenase 1"],
+        "IDH2": ["IDH2", "isocitrate dehydrogenase 2"],
+    },
+    "TRK / NTRK": {
+        "TRKA": ["TRKA", "NTRK1"],
+        "TRKB": ["TRKB", "NTRK2"],
+        "TRKC": ["TRKC", "NTRK3"],
+    },
+    "Receptor tyrosine kinases": {
+        "ALK": ["ALK", "anaplastic lymphoma kinase"],
+        "ROS1": ["ROS1", "ROS proto-oncogene 1"],
+        "MET": ["c-MET", "MET receptor", "MET proto-oncogene", "hepatocyte growth factor receptor"],
+        "RET": ["RET receptor", "RET proto-oncogene"],
+    },
+    "RAS": {
+        "KRAS": ["KRAS", "K-RAS"],
+    },
+    "Cell-cycle regulators": {
+        "CDK4": ["CDK4", "cyclin-dependent kinase 4"],
+        "CDK6": ["CDK6", "cyclin-dependent kinase 6"],
+    },
+    "PI3K–AKT–mTOR pathway": {
+        "PI3Kα": ["PI3K alpha", "PI3K-alpha", "PI3Kα", "PIK3CA"],
+        "mTOR": ["mTOR", "mechanistic target of rapamycin"],
+        "FKBP12": ["FKBP12", "FKBP1A"],
+    },
+    "DNA repair": {
+        "PARP1": ["PARP1", "poly ADP ribose polymerase 1"],
+        "PARP2": ["PARP2", "poly ADP ribose polymerase 2"],
+        "PARP3": ["PARP3", "poly ADP ribose polymerase 3"],
+    },
+    "Protein prenylation": {
+        "Farnesyltransferase": ["Farnesyltransferase", "Farnesyl transferase", "FTase"],
+    },
+    "Epigenetic regulators": {
+        "HDAC1": ["HDAC1", "histone deacetylase 1"],
+        "HDAC2": ["HDAC2", "histone deacetylase 2"],
+        "HDAC3": ["HDAC3", "histone deacetylase 3"],
+        "HDAC6": ["HDAC6", "histone deacetylase 6"],
+    },
+    "Integrins": {
+        "Integrin αvβ3": ["integrin αvβ3", "integrin alpha v beta 3", "alpha(v)beta(3) integrin"],
+        "Integrin αvβ5": ["integrin αvβ5", "integrin alpha v beta 5", "alpha(v)beta(5) integrin"],
+    },
+    "ONC201 / dordaviprone targets": {
+        "ClpP": ["CLPP", "caseinolytic mitochondrial matrix peptidase proteolytic subunit"],
+        "DRD2": ["DRD2", "dopamine D2 receptor"],
+    },
+    "Monocarboxylate transporters": {
+        "MCT1": ["MCT1", "SLC16A1", "monocarboxylate transporter 1"],
+        "MCT2": ["MCT2", "SLC16A7", "monocarboxylate transporter 2"],
+        "MCT4": ["MCT4", "SLC16A3", "monocarboxylate transporter 4"],
+    },
+}
+
+PRIMARY_LITERATURE_FILTER
+-------------------------
+(
+    "Clinical Study"[pt]
+    OR "Clinical Trial"[pt]
+    OR "Clinical Trial, Phase I"[pt]
+    OR "Clinical Trial, Phase II"[pt]
+    OR "Clinical Trial, Phase III"[pt]
+    OR "Clinical Trial, Phase IV"[pt]
+    OR "Clinical Trial Protocol"[pt]
+    OR "Controlled Clinical Trial"[pt]
+    OR "Randomized Controlled Trial"[pt]
+    OR "Adaptive Clinical Trial"[pt]
+    OR "Pragmatic Clinical Trial"[pt]
+    OR "Equivalence Trial"[pt]
+    OR "Multicenter Study"[pt]
+    OR "Journal Article"[pt]
+)
+AND NOT (
+    "Review"[pt]
+    OR "Systematic Review"[pt]
+    OR "Meta-Analysis"[pt]
+)
+
+build_target_query
+------------------
+Notebook cell: 40
+
+def build_target_query(aliases):
+    return "(" + " OR ".join(
+        f'"{alias}"[Title/Abstract]' for alias in aliases
+    ) + ")"
+
+get_target_year_counts
+----------------------
+Notebook cell: 40
+
+def get_target_year_counts(
+    context_query,
+    aliases,
+    start_year=2000,
+    end_year=2025,
+    force_refresh=False,
+):
+    target_query = build_target_query(aliases)
+    search_query = (
+        f"({context_query}) AND {target_query} "
+        f"AND ({start_year}:{end_year}[pdat]) "
+        f"AND {PRIMARY_LITERATURE_FILTER}"
+    )
+    normalized_query = _normalize_pubmed_query(search_query)
+    query_key = _pubmed_query_key(search_query)
+
+    if not force_refresh:
+        with _open_pubmed_cache() as connection:
+            cached = connection.execute(
+                """
+                SELECT yearly_counts_json, total_records
+                FROM target_year_counts
+                WHERE query_key = ?
+                """,
+                (query_key,),
+            ).fetchone()
+        if cached is not None:
+            yearly_counts = {
+                int(year): int(count)
+                for year, count in json.loads(cached[0]).items()
+            }
+            return yearly_counts, int(cached[1])
+
+    search_record = read_entrez_with_retries(
+        lambda: Entrez.esearch(
+            db="pubmed", term=search_query, retmax=0, usehistory="y"
+        ),
+        "target search",
+    )
+    total_records = int(search_record["Count"])
+    yearly_counts = {year: 0 for year in range(start_year, end_year + 1)}
+    batch_size = 1000
+    for retstart in range(0, total_records, batch_size):
+        summaries = read_entrez_with_retries(
+            lambda retstart=retstart: Entrez.esummary(
+                db="pubmed",
+                query_key=search_record["QueryKey"],
+                WebEnv=search_record["WebEnv"],
+                retstart=retstart,
+                retmax=batch_size,
+            ),
+            f"target summaries starting at {retstart}",
+        )
+        for summary in summaries:
+            year_match = re.search(r"\b(19|20)\d{2}\b", str(summary.get("PubDate", "")))
+            if year_match:
+                year = int(year_match.group(0))
+                if year in yearly_counts:
+                    yearly_counts[year] += 1
+
+    # Store only a fully successful target retrieval.
+    with _open_pubmed_cache() as connection:
+        connection.execute(
+            """
+            INSERT INTO target_year_counts
+                (query_key, normalized_query, start_year, end_year,
+                 yearly_counts_json, total_records, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            ON CONFLICT(query_key) DO UPDATE SET
+                normalized_query = excluded.normalized_query,
+                start_year = excluded.start_year,
+                end_year = excluded.end_year,
+                yearly_counts_json = excluded.yearly_counts_json,
+                total_records = excluded.total_records,
+                fetched_at = CURRENT_TIMESTAMP
+            """,
+            (
+                query_key,
+                normalized_query,
+                start_year,
+                end_year,
+                json.dumps(yearly_counts, sort_keys=True),
+                total_records,
+            ),
+        )
+    return yearly_counts, total_records
+
+get_molecular_target_trends
+---------------------------
+Notebook cell: 40
+
+def get_molecular_target_trends(context_label, context_query, start_year=2000, end_year=2025):
+    rows = []
+    for family, targets in MOLECULAR_TARGET_FAMILIES.items():
+        for target, aliases in targets.items():
+            yearly_counts, total_records = get_target_year_counts(
+                context_query, aliases, start_year, end_year
+            )
+            print(f"{context_label} | {family} | {target}: {total_records:,} publications")
+            rows.extend(
+                {
+                    "Context": context_label,
+                    "Family": family,
+                    "Target": target,
+                    "Year": year,
+                    "Publications": count,
+                }
+                for year, count in yearly_counts.items()
+            )
+    return remove_zero_only_target_series(pd.DataFrame(rows))

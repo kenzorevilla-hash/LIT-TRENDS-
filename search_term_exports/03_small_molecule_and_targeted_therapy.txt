@@ -1,0 +1,88 @@
+3. Small-Molecule and Targeted Therapy
+======================================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+The first section is the therapy-term block; the following commands combine it with the neuro-oncology context.
+SMALL_MOLECULE_TARGETED_THERAPY_QUERY
+-------------------------------------
+(
+    "Targeted Therapy" OR "Targeted Therapies"
+    OR "Molecularly Targeted Therapy" OR "Molecular Targeted Therapy"
+    OR "Small Molecule Inhibitor" OR "Small Molecule Inhibitors"
+    OR "Tyrosine Kinase Inhibitor" OR "Tyrosine Kinase Inhibitors" OR "TKI" OR "TKIs"
+
+    OR "EGFR Inhibitor" OR "EGFR Inhibitors"
+    OR "Erlotinib" OR "Gefitinib" OR "Afatinib" OR "Dacomitinib"
+    OR "Osimertinib" OR "BDTX-1535" OR "WSD0922"
+
+    OR "VEGFR Inhibitor" OR "VEGFR Inhibitors"
+    OR "Axitinib" OR "Cediranib" OR "Vatalanib" OR "PTK787" OR "Apatinib"
+
+    OR "PDGFR Inhibitor" OR "PDGFR Inhibitors" OR "Imatinib"
+
+    OR "BRAF Inhibitor" OR "BRAF Inhibitors" OR "RAF Inhibitor" OR "RAF Inhibitors"
+    OR "Vemurafenib" OR "Dabrafenib" OR "Encorafenib" OR "Tovorafenib"
+    OR "Plixorafenib" OR "PLX8394"
+
+    OR "MEK Inhibitor" OR "MEK Inhibitors"
+    OR "Trametinib" OR "Selumetinib" OR "Binimetinib" OR "Cobimetinib"
+
+    OR "IDH Inhibitor" OR "IDH Inhibitors" OR "IDH1 Inhibitor" OR "IDH2 Inhibitor"
+    OR "Mutant IDH Inhibitor" OR "Vorasidenib" OR "AG-881" OR "Ivosidenib"
+    OR "Safusidenib" OR "Olutasidenib" OR "FT-2102" OR "DS-1001"
+    OR "BAY 1436032" OR "MRK-A"
+
+    OR "NTRK Inhibitor" OR "NTRK Inhibitors" OR "TRK Inhibitor" OR "TRK Inhibitors"
+    OR "Larotrectinib" OR "Entrectinib"
+
+    OR "ALK Inhibitor" OR "ALK Inhibitors"
+    OR "Alectinib" OR "Ceritinib" OR "Brigatinib" OR "Lorlatinib" OR "Crizotinib"
+
+    OR "ROS1 Inhibitor" OR "ROS1 Inhibitors"
+
+    OR "MET Inhibitor" OR "MET Inhibitors" OR "Capmatinib" OR "Tepotinib"
+
+    OR "RET Inhibitor" OR "RET Inhibitors" OR "Selpercatinib" OR "Pralsetinib"
+
+    OR "KRAS Inhibitor" OR "KRAS G12C Inhibitor" OR "Sotorasib"
+
+    OR "HER2 Inhibitor" OR "HER2 Inhibitors"
+    OR "Lapatinib" OR "Neratinib" OR "Tucatinib"
+
+    OR "CDK4/6 Inhibitor" OR "CDK4/6 Inhibitors" OR "Abemaciclib"
+
+    OR "PI3K Inhibitor" OR "PI3K Inhibitors" OR "Alpelisib"
+
+    OR "mTOR Inhibitor" OR "mTOR Inhibitors" OR "Everolimus" OR "Temsirolimus"
+
+    OR "PARP Inhibitor" OR "PARP Inhibitors" OR "Olaparib"
+
+    OR "Farnesyl Transferase Inhibitor" OR "Farnesyl Transferase Inhibitors"
+    OR "Tipifarnib" OR "Lonafarnib"
+
+    OR "HDAC Inhibitor" OR "HDAC Inhibitors" OR "Vorinostat" OR "Romidepsin"
+
+    OR "Integrin Inhibitor" OR "Integrin Inhibitors" OR "Cilengitide"
+
+    OR "Dordaviprone" OR "ONC201"
+
+    OR "MCT Inhibitor" OR "MCT Inhibitors"
+)
+
+SMALL_MOLECULE_NEURO_ONCOLOGY_QUERY
+-----------------------------------
+Notebook cell: 17
+
+SMALL_MOLECULE_NEURO_ONCOLOGY_QUERY = (
+    f"{NEURO_ONCOLOGY_DISEASE_CONTEXT}\nAND\n{SMALL_MOLECULE_TARGETED_THERAPY_QUERY}"
+)
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT
+------------------------------
+Notebook cell: 17
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT = CHEMOTHERAPY_NEURO_ONCOLOGY_QUERY.split("\nAND\n", 1)[0]

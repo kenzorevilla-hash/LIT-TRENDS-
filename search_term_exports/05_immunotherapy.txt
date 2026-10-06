@@ -1,0 +1,63 @@
+5. Immunotherapy
+================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+IMMUNOTHERAPY_QUERY
+-------------------
+(
+    "Immunotherapy" OR "Cancer Immunotherapy" OR "Tumor Immunotherapy" OR "Immunotherapeutic"
+
+    OR "Immune Checkpoint Inhibitor" OR "Immune Checkpoint Inhibitors"
+    OR "Checkpoint Inhibitor" OR "Checkpoint Inhibitors"
+    OR "Immune Checkpoint Blockade" OR "Checkpoint Blockade"
+
+    OR "PD-1 Inhibitor" OR "PD-1 Inhibitors"
+    OR "PD-L1 Inhibitor" OR "PD-L1 Inhibitors"
+    OR "Anti-PD-1" OR "Anti-PD-L1"
+
+    OR "CTLA-4 Inhibitor" OR "CTLA-4 Inhibitors" OR "Anti-CTLA-4"
+
+    OR "Pembrolizumab" OR "Nivolumab" OR "Ipilimumab"
+
+    OR "TIM-3" OR "TIM-3 Inhibitor" OR "Anti-TIM-3" OR "BGB-A425" OR "Tislelizumab"
+
+    OR "LAG-3" OR "LAG-3 Inhibitor"
+
+    OR "Cancer Vaccine" OR "Cancer Vaccines" OR "Tumor Vaccine" OR "Tumor Vaccines"
+    OR "Peptide Vaccine" OR "Peptide Vaccines"
+    OR "Dendritic Cell Vaccine" OR "Dendritic Cell Vaccines"
+    OR "Cell Vaccine" OR "Vaccine Therapy"
+
+    OR "Rindopepimut" OR "CDX-110" OR "IMA950" OR "HSPPC-96" OR "DCVax-L"
+    OR "IDH1 Peptide Vaccine" OR "WT1 Vaccine" OR "CMV pp65"
+
+    OR "CAR-T" OR "CAR T" OR "CAR T-cell" OR "CAR T Cell" OR "CAR T-cell Therapy"
+    OR "Chimeric Antigen Receptor T Cell" OR "Chimeric Antigen Receptor T Cells"
+    OR "Adoptive Immunotherapy" OR "Adoptive Cell Therapy" OR "Adoptive T Cell Therapy"
+
+    OR "IL13Rα2 CAR-T" OR "IL13Ralpha2 CAR-T" OR "EGFRvIII CAR-T" OR "HER2 CAR-T"
+    OR "EphA2 CAR-T" OR "GD2 CAR-T" OR "B7-H3 CAR-T" OR "Chlorotoxin CAR-T"
+    OR "CD317 CAR-T" OR "TanCAR" OR "TanCART"
+
+    OR "Oncolytic Virus" OR "Oncolytic Viruses"
+    OR "Oncolytic Viral Therapy" OR "Oncolytic Virotherapy" OR "Viral Therapy"
+
+    OR "Parvovirus" OR "Newcastle Disease Virus" OR "Reovirus" OR "Delta-24-RGD"
+    OR "DNX-2401" OR "Toca 511" OR "ONYX-015" OR "PVSRIPO"
+    OR "G47-delta" OR "G47Δ"
+)
+
+IMMUNOTHERAPY_NEURO_ONCOLOGY_QUERY
+----------------------------------
+Notebook cell: 23
+
+IMMUNOTHERAPY_NEURO_ONCOLOGY_QUERY = (
+    f"{NEURO_ONCOLOGY_DISEASE_CONTEXT}\nAND\n{IMMUNOTHERAPY_QUERY}"
+)
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT
+------------------------------
+Notebook cell: 17
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT = CHEMOTHERAPY_NEURO_ONCOLOGY_QUERY.split("\nAND\n", 1)[0]

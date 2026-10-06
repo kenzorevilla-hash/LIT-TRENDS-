@@ -1,0 +1,29 @@
+1. Neuro-Oncology Terms
+=======================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+This is the broad neuro-oncology disease query used for the overall publication trend.
+NEURO_ONCOLOGY_QUERY
+--------------------
+(
+    "Nervous System Neoplasms"[Mesh]
+    OR
+    (
+        "Glioblastoma" OR "Glioblastoma Multiforme" OR "Astrocytoma" OR "Oligodendroglioma"
+        OR "Diffuse Midline Glioma" OR "H3 K27-altered" OR "Pilocytic Astrocytoma"
+        OR "Pleomorphic Xanthoastrocytoma" OR "Subependymal Giant Cell Astrocytoma"
+        OR "Ependymoma" OR "Myxopapillary ependymoma" OR "Ganglioglioma"
+        OR "Dysembryoplastic Neuroepithelial Tumor" OR "DNET" OR "Central Neurocytoma"
+        OR "Glioma" OR "DIPG" OR "Diffuse Midline Pontine Glioma" OR "Medulloblastoma"
+        OR "Atypical Teratoid Rhabdoid Tumor" OR "Pineoblastoma" OR "Germinoma"
+        OR "Meningioma" OR "Pituitary Adenoma" OR "Pituitary Neuroendocrine Tumor"
+        OR "PNET" OR "Craniopharyngioma" OR "Vestibular Schwannoma"
+        OR "Brain Metastasis" OR "Brain Metastases" OR "Leptomeningeal Disease"
+        OR "Leptomeningeal Carcinomatosis" OR "Primary CNS Lymphoma" OR "Hemangioblastoma"
+        OR "Choroid Plexus Papilloma"
+    )
+)

@@ -1,0 +1,88 @@
+4. Antibody and ADC
+===================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+BIOLOGIC_ANTIBODY_THERAPY_QUERY
+-------------------------------
+(
+    "Bevacizumab"
+
+    OR "Cetuximab" OR "Panitumumab" OR "Nimotuzumab"
+
+    OR "Depatuxizumab Mafodotin" OR "Depatuximab Mafodotin"
+    OR "ABT-414" OR "AMG595"
+
+    OR "Trastuzumab" OR "Pertuzumab"
+
+    OR "Ado-Trastuzumab Emtansine" OR "Trastuzumab Emtansine" OR "T-DM1"
+
+    OR "Trastuzumab Deruxtecan" OR "T-DXd"
+
+    OR "Sacituzumab Govitecan"
+
+    OR "Amivantamab"
+
+    OR "EGFR Antibody" OR "EGFR Antibodies"
+    OR "EGFRvIII Antibody" OR "EGFRvIII Antibodies"
+
+    OR "HER2 Antibody" OR "HER2 Antibodies"
+    OR "ERBB2 Antibody" OR "ERBB2 Antibodies"
+
+    OR "HER3 Antibody" OR "HER3 Antibodies"
+    OR "ERBB3 Antibody" OR "ERBB3 Antibodies"
+
+    OR "TROP2 Antibody" OR "TROP2 Antibodies"
+    OR "TACSTD2 Antibody" OR "TACSTD2 Antibodies"
+
+    OR "B7-H3 Antibody" OR "B7-H3 Antibodies"
+    OR "CD276 Antibody" OR "CD276 Antibodies"
+
+    OR "GD2 Antibody" OR "GD2 Antibodies"
+
+    OR "FOLR1 Antibody" OR "FOLR1 Antibodies"
+    OR "Folate Receptor Alpha Antibody" OR "Folate Receptor Alpha Antibodies"
+
+    OR "NECTIN4 Antibody" OR "NECTIN4 Antibodies"
+    OR "Nectin-4 Antibody" OR "Nectin-4 Antibodies"
+
+    OR "CLDN6 Antibody" OR "CLDN6 Antibodies"
+    OR "Claudin 6 Antibody" OR "Claudin 6 Antibodies"
+
+    OR "CLDN18 Antibody" OR "CLDN18 Antibodies"
+    OR "CLDN18.2 Antibody" OR "CLDN18.2 Antibodies"
+    OR "Claudin 18.2 Antibody" OR "Claudin 18.2 Antibodies"
+
+    OR "Tissue Factor Antibody" OR "Tissue Factor Antibodies"
+    OR "CD142 Antibody" OR "CD142 Antibodies"
+
+    OR "ALCAM Antibody" OR "ALCAM Antibodies"
+    OR "CD166 Antibody" OR "CD166 Antibodies"
+
+    OR "ROR1 Antibody" OR "ROR1 Antibodies"
+    OR "ROR2 Antibody" OR "ROR2 Antibodies"
+
+    OR "ZIP6 Antibody" OR "ZIP6 Antibodies"
+    OR "SLC39A6 Antibody" OR "SLC39A6 Antibodies"
+
+    OR "B7-H4 Antibody" OR "B7-H4 Antibodies"
+    OR "VTCN1 Antibody" OR "VTCN1 Antibodies"
+
+    OR "Antibody-Drug Conjugate" OR "Antibody Drug Conjugate"
+    OR "Antibody-Drug Conjugates" OR "Antibody Drug Conjugates"
+    OR "ADC" OR "ADCs"
+)
+
+BIOLOGIC_NEURO_ONCOLOGY_QUERY
+-----------------------------
+Notebook cell: 20
+
+BIOLOGIC_NEURO_ONCOLOGY_QUERY = (
+    f"{NEURO_ONCOLOGY_DISEASE_CONTEXT}\nAND\n{BIOLOGIC_ANTIBODY_THERAPY_QUERY}"
+)
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT
+------------------------------
+Notebook cell: 17
+
+NEURO_ONCOLOGY_DISEASE_CONTEXT = CHEMOTHERAPY_NEURO_ONCOLOGY_QUERY.split("\nAND\n", 1)[0]

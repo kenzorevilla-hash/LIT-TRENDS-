@@ -1,0 +1,49 @@
+2. General Neurology Terms
+==========================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+The notebook variable is named GENERAL_NEUROSCIENCE_QUERY.
+GENERAL_NEUROSCIENCE_QUERY
+--------------------------
+(
+    ("Nervous System Diseases"[Mesh] OR "Neurology"[Mesh] OR "Neurologic Manifestations"[Mesh])
+    OR
+    (
+        "Stroke" OR "Cerebrovascular Accident" OR "CVA" OR "Ischemic Stroke"
+        OR "Intracerebral Hemorrhage" OR "Hemorrhagic Stroke" OR "Subarachnoid Hemorrhage"
+        OR "Transient Ischemic Attack" OR "TIA" OR "Cerebral Aneurysm"
+        OR "Arteriovenous Malformation" OR "AVM" OR "Cavernous Angioma" OR "Cavernoma"
+        OR "Moyamoya Disease" OR "Cerebral Venous Sinus Thrombosis" OR "Alzheimer Disease"
+        OR "Alzheimer's Disease" OR "Parkinson Disease" OR "Parkinson's Disease"
+        OR "Amyotrophic Lateral Sclerosis" OR "ALS" OR "Frontotemporal Dementia"
+        OR "Frontotemporal Lobar Degeneration" OR "Lewy Body Dementia"
+        OR "Dementia with Lewy Bodies" OR "Huntington Disease" OR "Huntington's Disease"
+        OR "Creutzfeldt-Jakob Disease" OR "Prion Disease" OR "Corticobasal Degeneration"
+        OR "Multiple System Atrophy" OR "Shy-Drager Syndrome" OR "Progressive Supranuclear Palsy"
+        OR "Multiple Sclerosis" OR "Relapsing-Remitting MS" OR "Neuromyelitis Optica"
+        OR "NMO" OR "Devic's Disease" OR "MOG Antibody Disease" OR "MOGAD"
+        OR "Acute Disseminated Encephalomyelitis" OR "ADEM"
+        OR "Anti-NMDA Receptor Encephalitis" OR "Autoimmune Encephalitis"
+        OR "Stiff-Person Syndrome" OR "Epilepsy" OR "Seizure Disorder"
+        OR "Status Epilepticus" OR "Temporal Lobe Epilepsy" OR "Lennox-Gastaut Syndrome"
+        OR "Dravet Syndrome" OR "West Syndrome" OR "Infantile Spasms"
+        OR "Migraine Disorders" OR "Migraine" OR "Cluster Headache" OR "Trigeminal Neuralgia"
+        OR "Idiopathic Intracranial Hypertension" OR "Pseudotumor Cerebri"
+        OR "Myasthenia Gravis" OR "Guillain-Barre Syndrome" OR "GBS"
+        OR "Chronic Inflammatory Demyelinating Polyneuropathy" OR "CIDP"
+        OR "Lambert-Eaton Myasthenic Syndrome" OR "Charcot-Marie-Tooth Disease"
+        OR "Duchenne Muscular Dystrophy" OR "Spinal Muscular Atrophy" OR "SMA"
+        OR "Complex Regional Pain Syndrome" OR "CRPS" OR "Essential Tremor" OR "Dystonia"
+        OR "Cervical Dystonia" OR "Tourette Syndrome" OR "Restless Legs Syndrome"
+        OR "Ataxia" OR "Spinocerebellar Ataxia" OR "Friedreich Ataxia" OR "Wilson Disease"
+        OR "Meningitis" OR "Encephalitis" OR "Brain Abscess" OR "Neurosyphilis"
+        OR "Traumatic Brain Injury" OR "TBI" OR "Chronic Traumatic Encephalopathy"
+        OR "CTE" OR "Concussion" OR "Spinal Cord Injury" OR "Hydrocephalus"
+        OR "Normal Pressure Hydrocephalus" OR "NPH" OR "Chiari Malformation"
+        OR "Spina Bifida" OR "Myelomeningocele" OR "Syringomyelia"
+    )
+)

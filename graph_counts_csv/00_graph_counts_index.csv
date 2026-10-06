@@ -1,0 +1,20 @@
+Graph number,CSV file,Description,Count type,Rows
+1,01_neuro_oncology_publications_annual.csv,Annual neuro-oncology publication counts,Annual,26
+2,02_general_neuroscience_vs_neuro_oncology_annual.csv,Annual general-neuroscience and neuro-oncology publication counts,Annual,26
+3,03_neuro_oncology_share_annual.csv,Annual neuro-oncology share of general-neuroscience publications,Annual ratio and percent,26
+4,04_neuro_oncology_treatment_modalities_cumulative.csv,Cumulative neuro-oncology treatment publications by modality,Annual and cumulative,104
+5,05_primary_cns_treatment_modalities_cumulative.csv,Cumulative primary-CNS treatment publications by modality,Annual and cumulative,104
+6,06_cns_metastasis_treatment_modalities_cumulative.csv,Cumulative CNS-metastasis treatment publications by modality,Annual and cumulative,104
+7,07_phase_iii_neuro_oncology_cumulative.csv,Cumulative Phase III neuro-oncology publications by modality,Annual and cumulative,104
+8,08_phase_iii_primary_cns_cumulative.csv,Cumulative Phase III primary-CNS publications by modality,Annual and cumulative,104
+9,09_phase_iii_cns_metastasis_cumulative.csv,Cumulative Phase III CNS-metastasis publications by modality,Annual and cumulative,104
+10,10_molecular_targets_neuro_oncology_cumulative.csv,Cumulative molecular-target publications in neuro-oncology,Annual and cumulative,1170
+11,11_molecular_targets_primary_cns_cumulative.csv,Cumulative molecular-target publications in primary CNS tumors,Annual and cumulative,1170
+12,12_molecular_targets_cns_metastasis_cumulative.csv,Cumulative molecular-target publications in CNS metastasis,Annual and cumulative,546
+13,13_biologic_targets_neuro_oncology_cumulative.csv,Cumulative biologic-target publications in neuro-oncology,Annual and cumulative,234
+14,14_biologic_targets_primary_cns_cumulative.csv,Cumulative biologic-target publications in primary CNS tumors,Annual and cumulative,234
+15,15_biologic_targets_cns_metastasis_cumulative.csv,Cumulative biologic-target publications in CNS metastasis,Annual and cumulative,130
+16,16_immune_cell_therapy_neuro_oncology_cumulative.csv,Cumulative immune/cell-therapy publications in neuro-oncology,Annual and cumulative,598
+17,17_immune_cell_therapy_primary_cns_cumulative.csv,Cumulative immune/cell-therapy publications in primary CNS tumors,Annual and cumulative,598
+18,18_immune_cell_therapy_cns_metastasis_cumulative.csv,Cumulative immune/cell-therapy publications in CNS metastasis,Annual and cumulative,156
+19,19_top_10_2025_disease_keywords_annual_trends.csv,Annual trends for the ten leading 2025 prespecified neuro-oncology disease keywords,Annual,260

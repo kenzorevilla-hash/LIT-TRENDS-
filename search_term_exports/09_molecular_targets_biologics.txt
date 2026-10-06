@@ -1,0 +1,225 @@
+9. Molecular Targets of Biologics
+=================================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+Includes biologic target families, aliases, primary-literature filtering, and query/count construction.
+BIOLOGIC_TARGET_FAMILIES
+------------------------
+Notebook cell: 47
+
+BIOLOGIC_TARGET_FAMILIES = {
+    "Growth factor / angiogenesis": {
+        "VEGF-A": ["VEGFA", "VEGF-A", "vascular endothelial growth factor A"],
+    },
+    "ErbB receptor family": {
+        "HER3 / ERBB3": [
+            "HER3",
+            "ERBB3",
+            "human epidermal growth factor receptor 3",
+        ],
+    },
+    "Cell-surface glycoproteins / adhesion molecules": {
+        "TROP2 / TACSTD2": [
+            "TROP2",
+            "TROP-2",
+            "TACSTD2",
+            "tumor-associated calcium signal transducer 2",
+        ],
+        "NECTIN4": ["NECTIN4", "Nectin-4", "PVRL4"],
+        "ALCAM / CD166": [
+            "ALCAM",
+            "CD166",
+            "activated leukocyte cell adhesion molecule",
+        ],
+        "ZIP6 / SLC39A6": ["ZIP6", "SLC39A6", "LIV-1", "zinc transporter ZIP6"],
+    },
+    "Gangliosides": {
+        "GD2": ["GD2", "disialoganglioside GD2"],
+    },
+    "Folate receptor": {
+        "FOLR1 / FRα": [
+            "FOLR1",
+            "FRα",
+            "FRalpha",
+            "folate receptor alpha",
+        ],
+    },
+    "Claudins / tight-junction proteins": {
+        "CLDN6": ["CLDN6", "claudin 6"],
+        "CLDN18.2": ["CLDN18.2", "claudin 18.2", "CLDN18 isoform 2"],
+    },
+    "Coagulation-related surface target": {
+        "Tissue Factor / CD142": [
+            "Tissue Factor",
+            "CD142",
+            "coagulation factor III",
+        ],
+    },
+    "Receptor tyrosine kinase-like orphan receptors": {
+        "ROR1": ["ROR1", "receptor tyrosine kinase-like orphan receptor 1"],
+        "ROR2": ["ROR2", "receptor tyrosine kinase-like orphan receptor 2"],
+    },
+}
+
+PRIMARY_LITERATURE_FILTER
+-------------------------
+(
+    "Clinical Study"[pt]
+    OR "Clinical Trial"[pt]
+    OR "Clinical Trial, Phase I"[pt]
+    OR "Clinical Trial, Phase II"[pt]
+    OR "Clinical Trial, Phase III"[pt]
+    OR "Clinical Trial, Phase IV"[pt]
+    OR "Clinical Trial Protocol"[pt]
+    OR "Controlled Clinical Trial"[pt]
+    OR "Randomized Controlled Trial"[pt]
+    OR "Adaptive Clinical Trial"[pt]
+    OR "Pragmatic Clinical Trial"[pt]
+    OR "Equivalence Trial"[pt]
+    OR "Multicenter Study"[pt]
+    OR "Journal Article"[pt]
+)
+AND NOT (
+    "Review"[pt]
+    OR "Systematic Review"[pt]
+    OR "Meta-Analysis"[pt]
+)
+
+build_target_query
+------------------
+Notebook cell: 40
+
+def build_target_query(aliases):
+    return "(" + " OR ".join(
+        f'"{alias}"[Title/Abstract]' for alias in aliases
+    ) + ")"
+
+get_target_year_counts
+----------------------
+Notebook cell: 40
+
+def get_target_year_counts(
+    context_query,
+    aliases,
+    start_year=2000,
+    end_year=2025,
+    force_refresh=False,
+):
+    target_query = build_target_query(aliases)
+    search_query = (
+        f"({context_query}) AND {target_query} "
+        f"AND ({start_year}:{end_year}[pdat]) "
+        f"AND {PRIMARY_LITERATURE_FILTER}"
+    )
+    normalized_query = _normalize_pubmed_query(search_query)
+    query_key = _pubmed_query_key(search_query)
+
+    if not force_refresh:
+        with _open_pubmed_cache() as connection:
+            cached = connection.execute(
+                """
+                SELECT yearly_counts_json, total_records
+                FROM target_year_counts
+                WHERE query_key = ?
+                """,
+                (query_key,),
+            ).fetchone()
+        if cached is not None:
+            yearly_counts = {
+                int(year): int(count)
+                for year, count in json.loads(cached[0]).items()
+            }
+            return yearly_counts, int(cached[1])
+
+    search_record = read_entrez_with_retries(
+        lambda: Entrez.esearch(
+            db="pubmed", term=search_query, retmax=0, usehistory="y"
+        ),
+        "target search",
+    )
+    total_records = int(search_record["Count"])
+    yearly_counts = {year: 0 for year in range(start_year, end_year + 1)}
+    batch_size = 1000
+    for retstart in range(0, total_records, batch_size):
+        summaries = read_entrez_with_retries(
+            lambda retstart=retstart: Entrez.esummary(
+                db="pubmed",
+                query_key=search_record["QueryKey"],
+                WebEnv=search_record["WebEnv"],
+                retstart=retstart,
+                retmax=batch_size,
+            ),
+            f"target summaries starting at {retstart}",
+        )
+        for summary in summaries:
+            year_match = re.search(r"\b(19|20)\d{2}\b", str(summary.get("PubDate", "")))
+            if year_match:
+                year = int(year_match.group(0))
+                if year in yearly_counts:
+                    yearly_counts[year] += 1
+
+    # Store only a fully successful target retrieval.
+    with _open_pubmed_cache() as connection:
+        connection.execute(
+            """
+            INSERT INTO target_year_counts
+                (query_key, normalized_query, start_year, end_year,
+                 yearly_counts_json, total_records, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            ON CONFLICT(query_key) DO UPDATE SET
+                normalized_query = excluded.normalized_query,
+                start_year = excluded.start_year,
+                end_year = excluded.end_year,
+                yearly_counts_json = excluded.yearly_counts_json,
+                total_records = excluded.total_records,
+                fetched_at = CURRENT_TIMESTAMP
+            """,
+            (
+                query_key,
+                normalized_query,
+                start_year,
+                end_year,
+                json.dumps(yearly_counts, sort_keys=True),
+                total_records,
+            ),
+        )
+    return yearly_counts, total_records
+
+get_biologic_target_trends
+--------------------------
+Notebook cell: 47
+
+def get_biologic_target_trends(
+    context_label,
+    context_query,
+    start_year=2000,
+    end_year=2025,
+):
+    rows = []
+    for family, targets in BIOLOGIC_TARGET_FAMILIES.items():
+        for target, aliases in targets.items():
+            yearly_counts, total_records = get_target_year_counts(
+                context_query,
+                aliases,
+                start_year,
+                end_year,
+            )
+            print(
+                f"{context_label} | {family} | {target}: "
+                f"{total_records:,} publications"
+            )
+            rows.extend(
+                {
+                    "Context": context_label,
+                    "Family": family,
+                    "Target": target,
+                    "Year": year,
+                    "Publications": count,
+                }
+                for year, count in yearly_counts.items()
+            )
+    return remove_zero_only_target_series(pd.DataFrame(rows))

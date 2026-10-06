@@ -1,0 +1,318 @@
+10. Molecular Targets of Immunotherapy
+======================================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+Publication interval used by the notebook: 2000-2025
+
+Notes
+-----
+Includes checkpoint, vaccine, CAR-T, and oncolytic-virus targets; therapy qualifiers; aliases; and query/count construction.
+IMMUNE_CELL_THERAPY_FAMILIES
+----------------------------
+Notebook cell: 54
+
+IMMUNE_CELL_THERAPY_FAMILIES = {
+    "Immune checkpoint targets": {
+        "PD-1 / PDCD1": [
+            "PD-1",
+            "PDCD1",
+            "programmed cell death protein 1",
+            "programmed death-1",
+        ],
+        "PD-L1 / CD274": [
+            "PD-L1",
+            "PDL1",
+            "CD274",
+            "programmed death-ligand 1",
+            "programmed death ligand 1",
+        ],
+        "CTLA-4": [
+            "CTLA-4",
+            "CTLA4",
+            "cytotoxic T-lymphocyte-associated protein 4",
+        ],
+        "TIM-3 / HAVCR2": [
+            "TIM-3",
+            "TIM3",
+            "HAVCR2",
+            "T-cell immunoglobulin and mucin-domain containing-3",
+        ],
+        "LAG-3": ["LAG-3", "LAG3", "lymphocyte activation gene 3"],
+    },
+    "Cancer vaccine targets": {
+        "WT1": ["WT1", "Wilms tumor 1"],
+        "CMV pp65 / UL83": ["CMV pp65", "cytomegalovirus pp65", "UL83"],
+        "BCAN": ["BCAN", "brevican"],
+        "CSPG4": ["CSPG4", "chondroitin sulfate proteoglycan 4"],
+        "FABP7": ["FABP7", "fatty acid binding protein 7", "brain lipid-binding protein"],
+        "IGF2BP3": [
+            "IGF2BP3",
+            "insulin-like growth factor 2 mRNA-binding protein 3",
+        ],
+        "NLGN4X": ["NLGN4X", "neuroligin 4 X-linked"],
+        "NRCAM": ["NRCAM", "neuronal cell adhesion molecule"],
+        "PTPRZ1": ["PTPRZ1", "protein tyrosine phosphatase receptor type Z1"],
+        "TNC": ["TNC", "tenascin-C"],
+        "BIRC5 / Survivin": [
+            "BIRC5",
+            "Survivin",
+            "baculoviral IAP repeat containing 5",
+        ],
+    },
+    "CAR-T": {
+        "IL13Rα2 CAR-T": [
+            "IL13Rα2",
+            "IL13Ralpha2",
+            "IL13RA2",
+            "interleukin-13 receptor alpha 2",
+        ],
+        "EGFRvIII CAR-T": ["EGFRvIII", "EGFR variant III"],
+        "HER2 CAR-T": ["HER2", "ERBB2"],
+        "EphA2 CAR-T": ["EphA2", "EPHA2"],
+        "GD2 CAR-T": ["GD2", "disialoganglioside GD2"],
+        "B7-H3 CAR-T": ["B7-H3", "CD276"],
+        "Chlorotoxin CAR-T": ["Chlorotoxin", "CLTX"],
+        "CD317 CAR-T": ["CD317", "BST2", "tetherin"],
+        "TanCAR / Tandem CAR-T": [
+            "TanCAR",
+            "TanCART",
+            "Tandem CAR",
+            "tandem chimeric antigen receptor",
+        ],
+    },
+    "Oncolytic virus": {
+        "DNX-2401 / Delta-24-RGD": [
+            "DNX-2401",
+            "DNX2401",
+            "Delta-24-RGD",
+            "Delta24-RGD",
+        ],
+        "PVSRIPO": ["PVSRIPO", "l poliovirus:rhinovirus chimera"],
+        "G47Δ": ["G47Δ", "G47-delta", "G47delta", "teserpaturev"],
+        "Toca 511": ["Toca 511", "vocimagene amiretrorepvec"],
+        "ONYX-015": ["ONYX-015", "dl1520"],
+        "Reovirus": ["Reovirus", "oncolytic reovirus", "pelareorep"],
+        "Parvovirus": ["Parvovirus", "H-1 parvovirus", "ParvOryx"],
+        "Newcastle Disease Virus": [
+            "Newcastle Disease Virus",
+            "oncolytic Newcastle disease virus",
+            "NDV",
+        ],
+    },
+}
+
+IMMUNE_CELL_THERAPY_QUALIFIERS
+------------------------------
+Notebook cell: 54
+
+IMMUNE_CELL_THERAPY_QUALIFIERS = {
+    "Immune checkpoint targets": [
+        "immune checkpoint inhibitor",
+        "checkpoint inhibitor",
+        "immune checkpoint blockade",
+        "checkpoint blockade",
+        "immunotherapy",
+    ],
+    "Cancer vaccine targets": [
+        "cancer vaccine",
+        "tumor vaccine",
+        "peptide vaccine",
+        "dendritic cell vaccine",
+        "vaccine",
+        "vaccination",
+        "immunization",
+    ],
+    "CAR-T": [
+        "CAR-T",
+        "CAR T",
+        "CAR T-cell",
+        "CAR T cell",
+        "chimeric antigen receptor",
+    ],
+    "Oncolytic virus": [
+        "oncolytic virus",
+        "oncolytic viruses",
+        "oncolytic virotherapy",
+        "oncolytic viral therapy",
+        "virotherapy",
+        "viral therapy",
+    ],
+}
+
+PRIMARY_LITERATURE_FILTER
+-------------------------
+(
+    "Clinical Study"[pt]
+    OR "Clinical Trial"[pt]
+    OR "Clinical Trial, Phase I"[pt]
+    OR "Clinical Trial, Phase II"[pt]
+    OR "Clinical Trial, Phase III"[pt]
+    OR "Clinical Trial, Phase IV"[pt]
+    OR "Clinical Trial Protocol"[pt]
+    OR "Controlled Clinical Trial"[pt]
+    OR "Randomized Controlled Trial"[pt]
+    OR "Adaptive Clinical Trial"[pt]
+    OR "Pragmatic Clinical Trial"[pt]
+    OR "Equivalence Trial"[pt]
+    OR "Multicenter Study"[pt]
+    OR "Journal Article"[pt]
+)
+AND NOT (
+    "Review"[pt]
+    OR "Systematic Review"[pt]
+    OR "Meta-Analysis"[pt]
+)
+
+build_target_query
+------------------
+Notebook cell: 40
+
+def build_target_query(aliases):
+    return "(" + " OR ".join(
+        f'"{alias}"[Title/Abstract]' for alias in aliases
+    ) + ")"
+
+build_immune_cell_therapy_query
+-------------------------------
+Notebook cell: 54
+
+def build_immune_cell_therapy_query(family, aliases):
+    target_query = build_target_query(aliases)
+    qualifier_query = build_target_query(
+        IMMUNE_CELL_THERAPY_QUALIFIERS[family]
+    )
+    return f"({target_query}) AND ({qualifier_query})"
+
+get_therapy_query_year_counts
+-----------------------------
+Notebook cell: 54
+
+def get_therapy_query_year_counts(
+    context_query,
+    therapy_query,
+    start_year=2000,
+    end_year=2025,
+    force_refresh=False,
+):
+    search_query = (
+        f"({context_query}) AND ({therapy_query}) "
+        f"AND ({start_year}:{end_year}[pdat]) "
+        f"AND {PRIMARY_LITERATURE_FILTER}"
+    )
+    normalized_query = _normalize_pubmed_query(search_query)
+    query_key = _pubmed_query_key(search_query)
+
+    if not force_refresh:
+        with _open_pubmed_cache() as connection:
+            cached = connection.execute(
+                """
+                SELECT yearly_counts_json, total_records
+                FROM target_year_counts
+                WHERE query_key = ?
+                """,
+                (query_key,),
+            ).fetchone()
+        if cached is not None:
+            yearly_counts = {
+                int(year): int(count)
+                for year, count in json.loads(cached[0]).items()
+            }
+            return yearly_counts, int(cached[1])
+
+    search_record = read_entrez_with_retries(
+        lambda: Entrez.esearch(
+            db="pubmed",
+            term=search_query,
+            retmax=0,
+            usehistory="y",
+        ),
+        "immune/cell-therapy search",
+    )
+    total_records = int(search_record["Count"])
+    yearly_counts = {year: 0 for year in range(start_year, end_year + 1)}
+    batch_size = 1000
+    for retstart in range(0, total_records, batch_size):
+        summaries = read_entrez_with_retries(
+            lambda retstart=retstart: Entrez.esummary(
+                db="pubmed",
+                query_key=search_record["QueryKey"],
+                WebEnv=search_record["WebEnv"],
+                retstart=retstart,
+                retmax=batch_size,
+            ),
+            f"immune/cell-therapy summaries starting at {retstart}",
+        )
+        for summary in summaries:
+            year_match = re.search(
+                r"\b(19|20)\d{2}\b",
+                str(summary.get("PubDate", "")),
+            )
+            if year_match:
+                year = int(year_match.group(0))
+                if year in yearly_counts:
+                    yearly_counts[year] += 1
+
+    with _open_pubmed_cache() as connection:
+        connection.execute(
+            """
+            INSERT INTO target_year_counts
+                (query_key, normalized_query, start_year, end_year,
+                 yearly_counts_json, total_records, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            ON CONFLICT(query_key) DO UPDATE SET
+                normalized_query = excluded.normalized_query,
+                start_year = excluded.start_year,
+                end_year = excluded.end_year,
+                yearly_counts_json = excluded.yearly_counts_json,
+                total_records = excluded.total_records,
+                fetched_at = CURRENT_TIMESTAMP
+            """,
+            (
+                query_key,
+                normalized_query,
+                start_year,
+                end_year,
+                json.dumps(yearly_counts, sort_keys=True),
+                total_records,
+            ),
+        )
+    return yearly_counts, total_records
+
+get_immune_cell_therapy_trends
+------------------------------
+Notebook cell: 54
+
+def get_immune_cell_therapy_trends(
+    context_label,
+    context_query,
+    start_year=2000,
+    end_year=2025,
+):
+    rows = []
+    for family, targets in IMMUNE_CELL_THERAPY_FAMILIES.items():
+        for target, aliases in targets.items():
+            therapy_query = build_immune_cell_therapy_query(
+                family,
+                aliases,
+            )
+            yearly_counts, total_records = get_therapy_query_year_counts(
+                context_query,
+                therapy_query,
+                start_year,
+                end_year,
+            )
+            print(
+                f"{context_label} | {family} | {target}: "
+                f"{total_records:,} publications"
+            )
+            rows.extend(
+                {
+                    "Context": context_label,
+                    "Family": family,
+                    "Target": target,
+                    "Year": year,
+                    "Publications": count,
+                }
+                for year, count in yearly_counts.items()
+            )
+    return remove_zero_only_target_series(pd.DataFrame(rows))

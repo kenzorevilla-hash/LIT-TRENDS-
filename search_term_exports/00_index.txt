@@ -1,0 +1,30 @@
+SEARCH TERM EXPORT INDEX
+========================
+
+Source notebook: pubmed_neuro_oncology_neuroscience_trends.ipynb
+
+01_neuro_oncology_terms.txt
+  1. Neuro-Oncology Terms
+02_general_neurology_terms.txt
+  2. General Neurology Terms
+03_small_molecule_and_targeted_therapy.txt
+  3. Small-Molecule and Targeted Therapy
+04_antibody_and_adc.txt
+  4. Antibody and ADC
+05_immunotherapy.txt
+  5. Immunotherapy
+06_phase_iii_criteria.txt
+  6. Phase III Criteria
+07_molecular_targets_small_molecules.txt
+  7. Molecular Targets for Small Molecules
+08_molecular_targets_small_molecules_2.txt
+  8. Molecular Targets for Small Molecules
+09_molecular_targets_biologics.txt
+  9. Molecular Targets of Biologics
+10_molecular_targets_immunotherapy.txt
+  10. Molecular Targets of Immunotherapy
+
+NOTE
+----
+Items 7 and 8 use the same category wording in the supplied request.
+Both separately numbered files are included; item 8 intentionally repeats item 7.

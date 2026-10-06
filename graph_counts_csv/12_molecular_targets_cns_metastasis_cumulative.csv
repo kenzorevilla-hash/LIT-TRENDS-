@@ -1,0 +1,547 @@
+Context,Family,Target,Year,Publications,Cumulative publications
+CNS metastasis,Cell-cycle regulators,CDK4,2000,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2001,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2002,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2003,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2004,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2005,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2006,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2007,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2008,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2009,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2010,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2011,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2012,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2013,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2014,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2015,0,0
+CNS metastasis,Cell-cycle regulators,CDK4,2016,1,1
+CNS metastasis,Cell-cycle regulators,CDK4,2017,1,2
+CNS metastasis,Cell-cycle regulators,CDK4,2018,2,4
+CNS metastasis,Cell-cycle regulators,CDK4,2019,1,5
+CNS metastasis,Cell-cycle regulators,CDK4,2020,0,5
+CNS metastasis,Cell-cycle regulators,CDK4,2021,6,11
+CNS metastasis,Cell-cycle regulators,CDK4,2022,1,12
+CNS metastasis,Cell-cycle regulators,CDK4,2023,1,13
+CNS metastasis,Cell-cycle regulators,CDK4,2024,1,14
+CNS metastasis,Cell-cycle regulators,CDK4,2025,3,17
+CNS metastasis,ErbB / EGFR family,EGFR,2000,0,0
+CNS metastasis,ErbB / EGFR family,EGFR,2001,0,0
+CNS metastasis,ErbB / EGFR family,EGFR,2002,0,0
+CNS metastasis,ErbB / EGFR family,EGFR,2003,0,0
+CNS metastasis,ErbB / EGFR family,EGFR,2004,1,1
+CNS metastasis,ErbB / EGFR family,EGFR,2005,0,1
+CNS metastasis,ErbB / EGFR family,EGFR,2006,1,2
+CNS metastasis,ErbB / EGFR family,EGFR,2007,5,7
+CNS metastasis,ErbB / EGFR family,EGFR,2008,2,9
+CNS metastasis,ErbB / EGFR family,EGFR,2009,7,16
+CNS metastasis,ErbB / EGFR family,EGFR,2010,6,22
+CNS metastasis,ErbB / EGFR family,EGFR,2011,2,24
+CNS metastasis,ErbB / EGFR family,EGFR,2012,13,37
+CNS metastasis,ErbB / EGFR family,EGFR,2013,10,47
+CNS metastasis,ErbB / EGFR family,EGFR,2014,10,57
+CNS metastasis,ErbB / EGFR family,EGFR,2015,12,69
+CNS metastasis,ErbB / EGFR family,EGFR,2016,17,86
+CNS metastasis,ErbB / EGFR family,EGFR,2017,14,100
+CNS metastasis,ErbB / EGFR family,EGFR,2018,32,132
+CNS metastasis,ErbB / EGFR family,EGFR,2019,23,155
+CNS metastasis,ErbB / EGFR family,EGFR,2020,22,177
+CNS metastasis,ErbB / EGFR family,EGFR,2021,35,212
+CNS metastasis,ErbB / EGFR family,EGFR,2022,33,245
+CNS metastasis,ErbB / EGFR family,EGFR,2023,39,284
+CNS metastasis,ErbB / EGFR family,EGFR,2024,30,314
+CNS metastasis,ErbB / EGFR family,EGFR,2025,51,365
+CNS metastasis,ErbB / EGFR family,HER2,2000,0,0
+CNS metastasis,ErbB / EGFR family,HER2,2001,0,0
+CNS metastasis,ErbB / EGFR family,HER2,2002,0,0
+CNS metastasis,ErbB / EGFR family,HER2,2003,0,0
+CNS metastasis,ErbB / EGFR family,HER2,2004,0,0
+CNS metastasis,ErbB / EGFR family,HER2,2005,2,2
+CNS metastasis,ErbB / EGFR family,HER2,2006,2,4
+CNS metastasis,ErbB / EGFR family,HER2,2007,9,13
+CNS metastasis,ErbB / EGFR family,HER2,2008,4,17
+CNS metastasis,ErbB / EGFR family,HER2,2009,7,24
+CNS metastasis,ErbB / EGFR family,HER2,2010,3,27
+CNS metastasis,ErbB / EGFR family,HER2,2011,5,32
+CNS metastasis,ErbB / EGFR family,HER2,2012,9,41
+CNS metastasis,ErbB / EGFR family,HER2,2013,10,51
+CNS metastasis,ErbB / EGFR family,HER2,2014,7,58
+CNS metastasis,ErbB / EGFR family,HER2,2015,9,67
+CNS metastasis,ErbB / EGFR family,HER2,2016,12,79
+CNS metastasis,ErbB / EGFR family,HER2,2017,11,90
+CNS metastasis,ErbB / EGFR family,HER2,2018,10,100
+CNS metastasis,ErbB / EGFR family,HER2,2019,9,109
+CNS metastasis,ErbB / EGFR family,HER2,2020,18,127
+CNS metastasis,ErbB / EGFR family,HER2,2021,26,153
+CNS metastasis,ErbB / EGFR family,HER2,2022,35,188
+CNS metastasis,ErbB / EGFR family,HER2,2023,29,217
+CNS metastasis,ErbB / EGFR family,HER2,2024,27,244
+CNS metastasis,ErbB / EGFR family,HER2,2025,30,274
+CNS metastasis,ErbB / EGFR family,HER4,2000,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2001,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2002,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2003,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2004,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2005,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2006,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2007,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2008,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2009,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2010,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2011,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2012,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2013,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2014,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2015,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2016,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2017,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2018,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2019,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2020,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2021,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2022,0,0
+CNS metastasis,ErbB / EGFR family,HER4,2023,1,1
+CNS metastasis,ErbB / EGFR family,HER4,2024,0,1
+CNS metastasis,ErbB / EGFR family,HER4,2025,0,1
+CNS metastasis,IDH,IDH1,2000,0,0
+CNS metastasis,IDH,IDH1,2001,0,0
+CNS metastasis,IDH,IDH1,2002,0,0
+CNS metastasis,IDH,IDH1,2003,0,0
+CNS metastasis,IDH,IDH1,2004,0,0
+CNS metastasis,IDH,IDH1,2005,0,0
+CNS metastasis,IDH,IDH1,2006,0,0
+CNS metastasis,IDH,IDH1,2007,0,0
+CNS metastasis,IDH,IDH1,2008,0,0
+CNS metastasis,IDH,IDH1,2009,0,0
+CNS metastasis,IDH,IDH1,2010,0,0
+CNS metastasis,IDH,IDH1,2011,0,0
+CNS metastasis,IDH,IDH1,2012,0,0
+CNS metastasis,IDH,IDH1,2013,0,0
+CNS metastasis,IDH,IDH1,2014,0,0
+CNS metastasis,IDH,IDH1,2015,0,0
+CNS metastasis,IDH,IDH1,2016,0,0
+CNS metastasis,IDH,IDH1,2017,1,1
+CNS metastasis,IDH,IDH1,2018,0,1
+CNS metastasis,IDH,IDH1,2019,0,1
+CNS metastasis,IDH,IDH1,2020,0,1
+CNS metastasis,IDH,IDH1,2021,0,1
+CNS metastasis,IDH,IDH1,2022,0,1
+CNS metastasis,IDH,IDH1,2023,0,1
+CNS metastasis,IDH,IDH1,2024,0,1
+CNS metastasis,IDH,IDH1,2025,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2000,1,1
+CNS metastasis,Integrins,Integrin αvβ3,2001,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2002,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2003,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2004,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2005,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2006,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2007,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2008,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2009,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2010,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2011,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2012,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2013,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2014,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2015,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2016,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2017,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2018,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2019,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2020,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2021,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2022,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2023,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2024,0,1
+CNS metastasis,Integrins,Integrin αvβ3,2025,0,1
+CNS metastasis,PDGFR / KIT / ABL,KIT,2000,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2001,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2002,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2003,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2004,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2005,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2006,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2007,0,0
+CNS metastasis,PDGFR / KIT / ABL,KIT,2008,1,1
+CNS metastasis,PDGFR / KIT / ABL,KIT,2009,0,1
+CNS metastasis,PDGFR / KIT / ABL,KIT,2010,0,1
+CNS metastasis,PDGFR / KIT / ABL,KIT,2011,1,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2012,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2013,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2014,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2015,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2016,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2017,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2018,0,2
+CNS metastasis,PDGFR / KIT / ABL,KIT,2019,1,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2020,0,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2021,0,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2022,0,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2023,0,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2024,0,3
+CNS metastasis,PDGFR / KIT / ABL,KIT,2025,0,3
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2000,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2001,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2002,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2003,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2004,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2005,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2006,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2007,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2008,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2009,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2010,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2011,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2012,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2013,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2014,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2015,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2016,1,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2017,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2018,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2019,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2020,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2021,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2022,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2023,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2024,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRα,2025,0,1
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2000,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2001,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2002,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2003,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2004,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2005,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2006,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2007,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2008,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2009,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2010,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2011,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2012,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2013,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2014,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2015,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2016,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2017,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2018,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2019,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2020,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2021,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2022,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2023,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2024,0,0
+CNS metastasis,PDGFR / KIT / ABL,PDGFRβ,2025,1,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2000,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2001,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2002,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2003,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2004,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2005,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2006,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2007,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2008,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2009,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2010,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2011,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2012,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2013,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2014,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2015,1,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2016,0,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2017,0,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2018,0,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2019,0,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2020,0,1
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2021,1,2
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2022,0,2
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2023,2,4
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2024,0,4
+CNS metastasis,PI3K–AKT–mTOR pathway,PI3Kα,2025,1,5
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2000,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2001,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2002,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2003,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2004,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2005,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2006,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2007,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2008,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2009,0,0
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2010,1,1
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2011,1,2
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2012,0,2
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2013,1,3
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2014,1,4
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2015,0,4
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2016,3,7
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2017,0,7
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2018,1,8
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2019,0,8
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2020,0,8
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2021,3,11
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2022,1,12
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2023,1,13
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2024,0,13
+CNS metastasis,PI3K–AKT–mTOR pathway,mTOR,2025,2,15
+CNS metastasis,RAF / MAPK pathway,BRAF,2000,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2001,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2002,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2003,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2004,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2005,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2006,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2007,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2008,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2009,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2010,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2011,0,0
+CNS metastasis,RAF / MAPK pathway,BRAF,2012,7,7
+CNS metastasis,RAF / MAPK pathway,BRAF,2013,5,12
+CNS metastasis,RAF / MAPK pathway,BRAF,2014,9,21
+CNS metastasis,RAF / MAPK pathway,BRAF,2015,6,27
+CNS metastasis,RAF / MAPK pathway,BRAF,2016,8,35
+CNS metastasis,RAF / MAPK pathway,BRAF,2017,7,42
+CNS metastasis,RAF / MAPK pathway,BRAF,2018,12,54
+CNS metastasis,RAF / MAPK pathway,BRAF,2019,9,63
+CNS metastasis,RAF / MAPK pathway,BRAF,2020,8,71
+CNS metastasis,RAF / MAPK pathway,BRAF,2021,7,78
+CNS metastasis,RAF / MAPK pathway,BRAF,2022,6,84
+CNS metastasis,RAF / MAPK pathway,BRAF,2023,7,91
+CNS metastasis,RAF / MAPK pathway,BRAF,2024,10,101
+CNS metastasis,RAF / MAPK pathway,BRAF,2025,14,115
+CNS metastasis,RAS,KRAS,2000,0,0
+CNS metastasis,RAS,KRAS,2001,0,0
+CNS metastasis,RAS,KRAS,2002,0,0
+CNS metastasis,RAS,KRAS,2003,0,0
+CNS metastasis,RAS,KRAS,2004,0,0
+CNS metastasis,RAS,KRAS,2005,0,0
+CNS metastasis,RAS,KRAS,2006,0,0
+CNS metastasis,RAS,KRAS,2007,0,0
+CNS metastasis,RAS,KRAS,2008,0,0
+CNS metastasis,RAS,KRAS,2009,0,0
+CNS metastasis,RAS,KRAS,2010,0,0
+CNS metastasis,RAS,KRAS,2011,0,0
+CNS metastasis,RAS,KRAS,2012,0,0
+CNS metastasis,RAS,KRAS,2013,0,0
+CNS metastasis,RAS,KRAS,2014,0,0
+CNS metastasis,RAS,KRAS,2015,1,1
+CNS metastasis,RAS,KRAS,2016,1,2
+CNS metastasis,RAS,KRAS,2017,0,2
+CNS metastasis,RAS,KRAS,2018,0,2
+CNS metastasis,RAS,KRAS,2019,0,2
+CNS metastasis,RAS,KRAS,2020,0,2
+CNS metastasis,RAS,KRAS,2021,5,7
+CNS metastasis,RAS,KRAS,2022,0,7
+CNS metastasis,RAS,KRAS,2023,2,9
+CNS metastasis,RAS,KRAS,2024,2,11
+CNS metastasis,RAS,KRAS,2025,4,15
+CNS metastasis,Receptor tyrosine kinases,ALK,2000,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2001,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2002,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2003,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2004,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2005,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2006,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2007,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2008,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2009,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2010,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2011,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2012,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2013,0,0
+CNS metastasis,Receptor tyrosine kinases,ALK,2014,1,1
+CNS metastasis,Receptor tyrosine kinases,ALK,2015,13,14
+CNS metastasis,Receptor tyrosine kinases,ALK,2016,10,24
+CNS metastasis,Receptor tyrosine kinases,ALK,2017,11,35
+CNS metastasis,Receptor tyrosine kinases,ALK,2018,31,66
+CNS metastasis,Receptor tyrosine kinases,ALK,2019,18,84
+CNS metastasis,Receptor tyrosine kinases,ALK,2020,10,94
+CNS metastasis,Receptor tyrosine kinases,ALK,2021,17,111
+CNS metastasis,Receptor tyrosine kinases,ALK,2022,13,124
+CNS metastasis,Receptor tyrosine kinases,ALK,2023,24,148
+CNS metastasis,Receptor tyrosine kinases,ALK,2024,11,159
+CNS metastasis,Receptor tyrosine kinases,ALK,2025,17,176
+CNS metastasis,Receptor tyrosine kinases,MET,2000,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2001,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2002,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2003,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2004,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2005,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2006,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2007,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2008,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2009,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2010,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2011,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2012,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2013,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2014,0,0
+CNS metastasis,Receptor tyrosine kinases,MET,2015,2,2
+CNS metastasis,Receptor tyrosine kinases,MET,2016,0,2
+CNS metastasis,Receptor tyrosine kinases,MET,2017,0,2
+CNS metastasis,Receptor tyrosine kinases,MET,2018,0,2
+CNS metastasis,Receptor tyrosine kinases,MET,2019,0,2
+CNS metastasis,Receptor tyrosine kinases,MET,2020,0,2
+CNS metastasis,Receptor tyrosine kinases,MET,2021,1,3
+CNS metastasis,Receptor tyrosine kinases,MET,2022,2,5
+CNS metastasis,Receptor tyrosine kinases,MET,2023,1,6
+CNS metastasis,Receptor tyrosine kinases,MET,2024,0,6
+CNS metastasis,Receptor tyrosine kinases,MET,2025,1,7
+CNS metastasis,Receptor tyrosine kinases,ROS1,2000,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2001,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2002,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2003,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2004,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2005,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2006,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2007,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2008,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2009,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2010,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2011,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2012,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2013,0,0
+CNS metastasis,Receptor tyrosine kinases,ROS1,2014,1,1
+CNS metastasis,Receptor tyrosine kinases,ROS1,2015,1,2
+CNS metastasis,Receptor tyrosine kinases,ROS1,2016,0,2
+CNS metastasis,Receptor tyrosine kinases,ROS1,2017,0,2
+CNS metastasis,Receptor tyrosine kinases,ROS1,2018,1,3
+CNS metastasis,Receptor tyrosine kinases,ROS1,2019,3,6
+CNS metastasis,Receptor tyrosine kinases,ROS1,2020,3,9
+CNS metastasis,Receptor tyrosine kinases,ROS1,2021,2,11
+CNS metastasis,Receptor tyrosine kinases,ROS1,2022,0,11
+CNS metastasis,Receptor tyrosine kinases,ROS1,2023,2,13
+CNS metastasis,Receptor tyrosine kinases,ROS1,2024,4,17
+CNS metastasis,Receptor tyrosine kinases,ROS1,2025,6,23
+CNS metastasis,TRK / NTRK,TRKA,2000,0,0
+CNS metastasis,TRK / NTRK,TRKA,2001,0,0
+CNS metastasis,TRK / NTRK,TRKA,2002,0,0
+CNS metastasis,TRK / NTRK,TRKA,2003,1,1
+CNS metastasis,TRK / NTRK,TRKA,2004,0,1
+CNS metastasis,TRK / NTRK,TRKA,2005,0,1
+CNS metastasis,TRK / NTRK,TRKA,2006,0,1
+CNS metastasis,TRK / NTRK,TRKA,2007,0,1
+CNS metastasis,TRK / NTRK,TRKA,2008,0,1
+CNS metastasis,TRK / NTRK,TRKA,2009,0,1
+CNS metastasis,TRK / NTRK,TRKA,2010,0,1
+CNS metastasis,TRK / NTRK,TRKA,2011,0,1
+CNS metastasis,TRK / NTRK,TRKA,2012,0,1
+CNS metastasis,TRK / NTRK,TRKA,2013,0,1
+CNS metastasis,TRK / NTRK,TRKA,2014,0,1
+CNS metastasis,TRK / NTRK,TRKA,2015,0,1
+CNS metastasis,TRK / NTRK,TRKA,2016,0,1
+CNS metastasis,TRK / NTRK,TRKA,2017,0,1
+CNS metastasis,TRK / NTRK,TRKA,2018,0,1
+CNS metastasis,TRK / NTRK,TRKA,2019,0,1
+CNS metastasis,TRK / NTRK,TRKA,2020,1,2
+CNS metastasis,TRK / NTRK,TRKA,2021,0,2
+CNS metastasis,TRK / NTRK,TRKA,2022,0,2
+CNS metastasis,TRK / NTRK,TRKA,2023,0,2
+CNS metastasis,TRK / NTRK,TRKA,2024,0,2
+CNS metastasis,TRK / NTRK,TRKA,2025,0,2
+CNS metastasis,TRK / NTRK,TRKB,2000,0,0
+CNS metastasis,TRK / NTRK,TRKB,2001,0,0
+CNS metastasis,TRK / NTRK,TRKB,2002,0,0
+CNS metastasis,TRK / NTRK,TRKB,2003,0,0
+CNS metastasis,TRK / NTRK,TRKB,2004,0,0
+CNS metastasis,TRK / NTRK,TRKB,2005,0,0
+CNS metastasis,TRK / NTRK,TRKB,2006,0,0
+CNS metastasis,TRK / NTRK,TRKB,2007,0,0
+CNS metastasis,TRK / NTRK,TRKB,2008,0,0
+CNS metastasis,TRK / NTRK,TRKB,2009,0,0
+CNS metastasis,TRK / NTRK,TRKB,2010,0,0
+CNS metastasis,TRK / NTRK,TRKB,2011,0,0
+CNS metastasis,TRK / NTRK,TRKB,2012,0,0
+CNS metastasis,TRK / NTRK,TRKB,2013,0,0
+CNS metastasis,TRK / NTRK,TRKB,2014,0,0
+CNS metastasis,TRK / NTRK,TRKB,2015,0,0
+CNS metastasis,TRK / NTRK,TRKB,2016,0,0
+CNS metastasis,TRK / NTRK,TRKB,2017,0,0
+CNS metastasis,TRK / NTRK,TRKB,2018,0,0
+CNS metastasis,TRK / NTRK,TRKB,2019,0,0
+CNS metastasis,TRK / NTRK,TRKB,2020,1,1
+CNS metastasis,TRK / NTRK,TRKB,2021,0,1
+CNS metastasis,TRK / NTRK,TRKB,2022,0,1
+CNS metastasis,TRK / NTRK,TRKB,2023,0,1
+CNS metastasis,TRK / NTRK,TRKB,2024,2,3
+CNS metastasis,TRK / NTRK,TRKB,2025,1,4
+CNS metastasis,TRK / NTRK,TRKC,2000,0,0
+CNS metastasis,TRK / NTRK,TRKC,2001,0,0
+CNS metastasis,TRK / NTRK,TRKC,2002,0,0
+CNS metastasis,TRK / NTRK,TRKC,2003,1,1
+CNS metastasis,TRK / NTRK,TRKC,2004,1,2
+CNS metastasis,TRK / NTRK,TRKC,2005,0,2
+CNS metastasis,TRK / NTRK,TRKC,2006,0,2
+CNS metastasis,TRK / NTRK,TRKC,2007,0,2
+CNS metastasis,TRK / NTRK,TRKC,2008,0,2
+CNS metastasis,TRK / NTRK,TRKC,2009,0,2
+CNS metastasis,TRK / NTRK,TRKC,2010,0,2
+CNS metastasis,TRK / NTRK,TRKC,2011,0,2
+CNS metastasis,TRK / NTRK,TRKC,2012,0,2
+CNS metastasis,TRK / NTRK,TRKC,2013,0,2
+CNS metastasis,TRK / NTRK,TRKC,2014,0,2
+CNS metastasis,TRK / NTRK,TRKC,2015,0,2
+CNS metastasis,TRK / NTRK,TRKC,2016,0,2
+CNS metastasis,TRK / NTRK,TRKC,2017,0,2
+CNS metastasis,TRK / NTRK,TRKC,2018,0,2
+CNS metastasis,TRK / NTRK,TRKC,2019,0,2
+CNS metastasis,TRK / NTRK,TRKC,2020,1,3
+CNS metastasis,TRK / NTRK,TRKC,2021,0,3
+CNS metastasis,TRK / NTRK,TRKC,2022,0,3
+CNS metastasis,TRK / NTRK,TRKC,2023,0,3
+CNS metastasis,TRK / NTRK,TRKC,2024,0,3
+CNS metastasis,TRK / NTRK,TRKC,2025,0,3
+CNS metastasis,VEGFR family,VEGFR1,2000,0,0
+CNS metastasis,VEGFR family,VEGFR1,2001,0,0
+CNS metastasis,VEGFR family,VEGFR1,2002,0,0
+CNS metastasis,VEGFR family,VEGFR1,2003,0,0
+CNS metastasis,VEGFR family,VEGFR1,2004,0,0
+CNS metastasis,VEGFR family,VEGFR1,2005,0,0
+CNS metastasis,VEGFR family,VEGFR1,2006,0,0
+CNS metastasis,VEGFR family,VEGFR1,2007,1,1
+CNS metastasis,VEGFR family,VEGFR1,2008,0,1
+CNS metastasis,VEGFR family,VEGFR1,2009,0,1
+CNS metastasis,VEGFR family,VEGFR1,2010,0,1
+CNS metastasis,VEGFR family,VEGFR1,2011,0,1
+CNS metastasis,VEGFR family,VEGFR1,2012,0,1
+CNS metastasis,VEGFR family,VEGFR1,2013,0,1
+CNS metastasis,VEGFR family,VEGFR1,2014,0,1
+CNS metastasis,VEGFR family,VEGFR1,2015,0,1
+CNS metastasis,VEGFR family,VEGFR1,2016,1,2
+CNS metastasis,VEGFR family,VEGFR1,2017,0,2
+CNS metastasis,VEGFR family,VEGFR1,2018,0,2
+CNS metastasis,VEGFR family,VEGFR1,2019,0,2
+CNS metastasis,VEGFR family,VEGFR1,2020,0,2
+CNS metastasis,VEGFR family,VEGFR1,2021,0,2
+CNS metastasis,VEGFR family,VEGFR1,2022,0,2
+CNS metastasis,VEGFR family,VEGFR1,2023,1,3
+CNS metastasis,VEGFR family,VEGFR1,2024,1,4
+CNS metastasis,VEGFR family,VEGFR1,2025,0,4
+CNS metastasis,VEGFR family,VEGFR2,2000,0,0
+CNS metastasis,VEGFR family,VEGFR2,2001,0,0
+CNS metastasis,VEGFR family,VEGFR2,2002,0,0
+CNS metastasis,VEGFR family,VEGFR2,2003,0,0
+CNS metastasis,VEGFR family,VEGFR2,2004,0,0
+CNS metastasis,VEGFR family,VEGFR2,2005,0,0
+CNS metastasis,VEGFR family,VEGFR2,2006,0,0
+CNS metastasis,VEGFR family,VEGFR2,2007,1,1
+CNS metastasis,VEGFR family,VEGFR2,2008,0,1
+CNS metastasis,VEGFR family,VEGFR2,2009,0,1
+CNS metastasis,VEGFR family,VEGFR2,2010,0,1
+CNS metastasis,VEGFR family,VEGFR2,2011,0,1
+CNS metastasis,VEGFR family,VEGFR2,2012,0,1
+CNS metastasis,VEGFR family,VEGFR2,2013,0,1
+CNS metastasis,VEGFR family,VEGFR2,2014,0,1
+CNS metastasis,VEGFR family,VEGFR2,2015,0,1
+CNS metastasis,VEGFR family,VEGFR2,2016,1,2
+CNS metastasis,VEGFR family,VEGFR2,2017,0,2
+CNS metastasis,VEGFR family,VEGFR2,2018,2,4
+CNS metastasis,VEGFR family,VEGFR2,2019,0,4
+CNS metastasis,VEGFR family,VEGFR2,2020,0,4
+CNS metastasis,VEGFR family,VEGFR2,2021,0,4
+CNS metastasis,VEGFR family,VEGFR2,2022,0,4
+CNS metastasis,VEGFR family,VEGFR2,2023,1,5
+CNS metastasis,VEGFR family,VEGFR2,2024,0,5
+CNS metastasis,VEGFR family,VEGFR2,2025,0,5
